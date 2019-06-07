@@ -1,0 +1,17 @@
+./monerod \
+--stagenet \
+--p2p-bind-port 30010 \
+--rpc-bind-port 30011 \
+--zmq-rpc-bind-port 30012 \
+--no-igd \
+--hide-my-port \
+--log-level 0 \
+--data-dir ~/stagenet/node_01 \
+--add-exclusive-node 127.0.0.1:30020 \
+--add-exclusive-node 127.0.0.1:30030 \
+--add-exclusive-node 127.0.0.1:30040 \
+--add-exclusive-node 127.0.0.1:30050 \
+--fixed-difficulty 150 \
+--rpc-bind-ip 0.0.0.0 \
+--p2p-bind-ip 127.0.0.1 \
+--confirm-external-bind

@@ -1,0 +1,11 @@
+./monero-wallet-rpc \
+--log-file ~/stagenet/server-wallet-rpc-01.log \
+--log-level 1 \
+--stagenet \
+--trusted-daemon \
+--wallet-dir ~/stagenet \
+--password '' \
+--rpc-bind-port 30014 \
+--daemon-address 127.0.0.1:30011 \
+--confirm-external-bind \
+--disable-rpc-login
